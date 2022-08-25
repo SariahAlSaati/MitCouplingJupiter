@@ -9,8 +9,9 @@ The code has been partly adapted from the code of Yuxian Wang written in IDL wri
 ## Contact
 Sariah Al Saati - sariah.al-saati@polytechnique.edu
 
-**Cite the data:** 10.5281/zenodo.7023034
+**Cite the code:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7023403.svg)](https://doi.org/10.5281/zenodo.7023403)
 
+**Cite the data:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7023034.svg)](https://doi.org/10.5281/zenodo.7023034)
 
 
 # Data
