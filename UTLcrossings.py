@@ -536,6 +536,100 @@ def get_alpha(pj, ns, nc):
         return 1.5
     return 3
 
+def Get_MainOvalLongitude(PJnum, NS):
+    # Obtained from visual observations on the data
+    # Is improved then by the code
+    theta = np.zeros((31, 2))
+    theta[1, :] = [9.65, 163]
+    theta[3, :] = [10, 169.45]
+    theta[4, :] = [9.7, 166.3]
+    theta[5, :] = [0, 166]
+    theta[6, :] = [0, 164.65]
+    theta[7, :] = [8.75, 164]
+    theta[8, :] = [0, 169.5]
+    theta[9, :] = [16.37, 166]
+    theta[11, :] = [9.8, 164.7]
+    theta[12, :] = [7.155, 0]
+    theta[13, :] = [11.13, 0]
+    theta[14, :] = [9, 163.55]
+    theta[16, :] = [0, 166.845]
+    # theta[20, :] = [26.864, 0]
+    theta[20, :] = [27.75, 0]
+    theta[21, :] = [11.99, 0]
+    theta[22, :] = [11.62, 0]
+    return theta[PJnum, NS]
+
+def Get_yLim_Waves(PJnum, NS, NC):
+    if PJnum == 1 and NS == 0 and NC == 0:
+        return (3.5, 5)
+    if PJnum == 1 and NS == 1 and NC == 0:
+        return (5, 7) 
+        # or whatever, no data for this crossing
+    if PJnum == 3 and NS == 0 and NC == 0:
+        return (4, 6)
+    if PJnum == 3 and NS == 1 and NC == 0:
+        return (5, 7)
+    if PJnum == 4 and NS == 0 and NC == 0:
+        return (5, 8)
+    if PJnum == 4 and NS == 1 and NC == 0:
+        return (4, 6)
+    if PJnum == 5 and NS == 0 and NC == 0:
+        return (2.5, 5)
+    if PJnum == 5 and NS == 1 and NC == 0:
+        return (2.5, 5)
+    if PJnum == 5 and NS == 1 and NC == 3:
+        return (4.5, 5.5)
+    if PJnum == 6 and NS == 1 and NC == 0:
+        return (2.5, 4.5)
+    if PJnum == 7 and NS == 0 and NC == 0:
+        return (4.5, 6.5)
+    if PJnum == 7 and NS == 1 and NC == 0:
+        return (4, 7)
+    if PJnum == 8 and NS == 1 and NC == 0:
+        return (4, 6)
+    if PJnum == 9 and NS == 0 and NC == 0:
+        return (12, 15)
+    if PJnum == 9 and NS == 1 and NC == 0:
+        return (2, 4)
+    if PJnum == 11 and NS == 0 and NC == 0:
+        return (2, 4)
+    if PJnum == 11 and NS == 1 and NC == 0:
+        return (2, 4)
+    if PJnum == 12 and NS == 0 and NC == 0:
+        return (4, 6)
+    if PJnum == 13 and NS == 0 and NC == 0:
+        return (5.7, 7)
+    if PJnum == 13 and NS == 0 and NC == 3:
+        return (7, 8.5)
+    if PJnum == 13 and NS == 1 and NC == 0:
+        return (4, 6)
+    if PJnum == 14 and NS == 0 and NC == 0:
+        return (5, 6.5)
+    if PJnum == 14 and NS == 1 and NC == 0:
+        return (2, 4)
+    if PJnum == 16 and NS == 0 and NC == 0:
+        return (2.5, 5)
+    if PJnum == 16 and NS == 1 and NC == 0:
+        return (2, 4)
+    if PJnum == 20 and NS == 0 and NC == 0:
+        return (0, 2)
+    if PJnum == 21 and NS == 0 and NC == 0:
+        return (2, 4)
+    if PJnum == 21 and NS == 0 and NC == 1:
+        return (8.5, 10.5)
+    if PJnum == 22 and NS == 0 and NC == 0:
+        return (7, 9)
+    if PJnum == 22 and NS == 0 and NC == 3:
+        return (8.5, 10)
+    if PJnum == 26 and NS == 1 and NC == 0:
+        return (1, 2)
+    if PJnum == 28 and NS == 0 and NC == 0:
+        return (4, 6)
+    if PJnum == 28 and NS == 0 and NC == 1:
+        return (15, 17)
+    if PJnum == 28 and NS == 1 and NC == 0:
+        return (1.7, 3)
+
 
 if __name__ == '__main__':
     pass

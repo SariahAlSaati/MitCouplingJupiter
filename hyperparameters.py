@@ -10,6 +10,7 @@ pathtoatmo = pathtoresults + "MODatmo/"
 pathtoiono = pathtoresults + "MODionos/"
 pathtoelec = pathtoresults + "MODelectro/"
 pathtoresB = pathtoresults + "MAGresiduals/"
+pathtoplots = pathtoresults + "PLT/"
 
 
 # file electrodynamics.py
