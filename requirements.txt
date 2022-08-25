@@ -1,0 +1,7 @@
+numpy>=1.20.2
+scipy>=1.6.2
+spiceypy>=4.0.0
+matplotlib>=3.4.1
+cdflib>=0.3.20
+mpl-axes-aligner>=1.1
+requests>=2.25.1
