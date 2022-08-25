@@ -131,4 +131,6 @@ dmypy.json
 # Used added
 .vscode
 Data
-Results
+**/*.npz
+**/*.png
+**/*.zip

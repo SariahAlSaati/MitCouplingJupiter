@@ -5,3 +5,4 @@ matplotlib>=3.4.1
 cdflib>=0.3.20
 mpl-axes-aligner>=1.1
 requests>=2.25.1
+pandas>=1.2.4
