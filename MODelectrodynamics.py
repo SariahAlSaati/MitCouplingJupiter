@@ -3,7 +3,7 @@ import UTLutils as ut
 import UTLprepro as utprepro
 import UTLcrossings as utxings
 import UTLmag as utmag
-import MODionos as modionos
+import MODionosphere as modionos
 import os.path
 import numpy as np
 import scipy as sp

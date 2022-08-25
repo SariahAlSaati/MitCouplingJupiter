@@ -57,3 +57,4 @@ $ pip install --upgrade -r requirements.txt
 ```
 in your terminal to install all the necessary packages.
 
+Examples of scripts used to run the code and to generate the plots showing the results of the study are given with the prefix 'PLT'.
