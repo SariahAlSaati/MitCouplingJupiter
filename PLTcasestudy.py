@@ -33,9 +33,9 @@ def CaseStudies(PJnum, NS, NC, show=False, useFP=False):
     filename = 'JouleHeating_' + ut.get_name(PJnum, NS, NC) + ".npz"
     
     if not os.path.isfile(hp.pathtoelec + filename):
-        print("Results file does not exist, calling electrodynamics.py to generate it.")
+        print("Results file does not exist, calling MODelectrodynamics.py to generate it.")
         T0, T1, Juls_HI, Jpara, Jxys, Jxys_CH4, dOmega, QS_hi, Power, SIGP, SIGH, SIGP3, SIGH3, TEFlux, JULS = ele.Jupiter_Electrodynamics_Model(PJnum, NS, NC)
-        print("Leaving electrodynamics.py, going back to epsc.py.")
+        print("Leaving MODelectrodynamics.py, going back to PLTcasestudy.py.")
     else: 
         npzfile = np.load(hp.pathtoelec + filename)
         T0 = npzfile["T0"]
@@ -329,5 +329,5 @@ def CaseStudies(PJnum, NS, NC, show=False, useFP=False):
 
 if __name__ == '__main__':
     show = False
-    pj, ns, nc = 1, 0, 0
-    CaseStudies(pj, ns, nc, show=show, useFP=True)
+    pj, ns, nc = 7, 0, 0
+    CaseStudies(pj, ns, nc, show=show, useFP=False)

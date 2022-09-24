@@ -540,14 +540,14 @@ def Get_MainOvalLongitude(PJnum, NS):
     # Obtained from visual observations on the data
     # Is improved then by the code
     theta = np.zeros((31, 2))
-    theta[1, :] = [9.65, 163]
+    theta[1, :] = [10.55, 163]
     theta[3, :] = [10, 169.45]
     theta[4, :] = [9.7, 166.3]
     theta[5, :] = [0, 166]
     theta[6, :] = [0, 164.65]
-    theta[7, :] = [8.75, 164]
+    theta[7, :] = [7.88, 164]
     theta[8, :] = [0, 169.5]
-    theta[9, :] = [16.37, 166]
+    theta[9, :] = [18.12, 166]
     theta[11, :] = [9.8, 164.7]
     theta[12, :] = [7.155, 0]
     theta[13, :] = [11.13, 0]
@@ -555,7 +555,7 @@ def Get_MainOvalLongitude(PJnum, NS):
     theta[16, :] = [0, 166.845]
     # theta[20, :] = [26.864, 0]
     theta[20, :] = [27.75, 0]
-    theta[21, :] = [11.99, 0]
+    theta[21, :] = [13.39, 0]
     theta[22, :] = [11.62, 0]
     return theta[PJnum, NS]
 

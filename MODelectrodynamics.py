@@ -265,7 +265,7 @@ def Jupiter_Electrodynamics_Model(PJnum, NS, NC):
     if not os.path.isfile(hp.pathtoiono + filen):
         print("Conductance file does not exist, calling MODionos.py to generate it.")
         modionos.Sub_Cond_AlongJuno(PJnum, NS, NC)
-        print("leaving MODionos.py, going back to electrodynamics.py.")
+        print("Leaving MODionos.py, going back to MODelectrodynamics.py.")
 
     npzfile = np.load(hp.pathtoiono + filen)
     JULS = npzfile['juls']

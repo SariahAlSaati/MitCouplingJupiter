@@ -21,9 +21,9 @@ def get_data(pj, ns, nc):
 
     filename = 'JouleHeating_' + name + ".npz"
     if not os.path.isfile(hp.pathtoelec + filename):
-        print("Results file does not exist, calling electrodynamics.py to generate it.")
+        print("Results file does not exist, calling MODelectrodynamics.py to generate it.")
         T0, T1, Juls_HI, Jpara, Jxys, Jxys_CH4, dOmega, QS_hi, Power, SIGP, SIGH, SIGP3, SIGH3, TEFlux, JULS = ele.Jupiter_Electrodynamics_Model(pj, ns, nc)
-        print("Leaving electrodynamics.py, going back to main.py.")
+        print("Leaving MODelectrodynamics.py, going back to PLTsuperposed.py.")
     else: 
         npzfile = np.load(hp.pathtoelec + filename)
         T0 = npzfile["T0"]
@@ -50,9 +50,6 @@ def get_data(pj, ns, nc):
     TEFlux = TEFlux*1000 #from W/m2 to mW/m2
     dtarr1 = ut.julian2datetime(JULS)
     time_common, e0_kev, pflux, pflux_jade, pflux_jedi = prepro.eflux(pj, ns, nc)
-    time_common_up, e0_kev_up, pflux_up, pflux_jade_up, pflux_jedi_up = prepro.eflux(pj, ns, nc, up=True)
-    dtarr_up, teflux_up = ionos.totalFlux(pj, ns, nc, up=True)
-    teflux_up = teflux_up*1000
     filenamedB = "dB_" + name + ".npz"
     dBdata = np.load(hp.pathtoresB + filenamedB)
     Juls_Bp = dBdata['Juls_Bp']
@@ -74,8 +71,6 @@ def get_data(pj, ns, nc):
     theta_common = ut.datetimeToThetaFP(dtarr, ThetaFP, time_common) - positionMainOval
     theta1 = ut.datetimeToThetaFP(dtarr, ThetaFP, dtarr1) - positionMainOval
     thetadB = ut.datetimeToThetaFP(dtarr, ThetaFP, dtarrdB) - positionMainOval
-    theta_common_up = ut.datetimeToThetaFP(dtarr, ThetaFP, time_common_up) - positionMainOval
-    theta_up = ut.datetimeToThetaFP(dtarr, ThetaFP, dtarr_up) - positionMainOval
     theta = ThetaFP - positionMainOval
 
     Jxys[0][Jxys[0]==0]=np.nan
@@ -305,6 +300,6 @@ def plotSuperposed(NS, show=False):
         plt.show()
 
 if __name__ == '__main__' and True:
-    show=True
+    show=False
     # plotSuperposed(0, show=show)
     plotSuperposed(1, show=show)
