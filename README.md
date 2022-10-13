@@ -1,6 +1,6 @@
 # MIT Coupling study at Jupiter
 
-This repository contains the implementation of the method used for the study of the Magnetosphere-Ionosphere-Thermosphere coupling at Jupiter using data from NASA's Juno mission. This code is associated to the manuscript *Magnetosphere-Ionosphere-Thermosphere Coupling study at Jupiter Based on Juno’s First 30 Orbits and Modeling Tools*, by Al Saati et al. (2022) submitted to Journal of Geophysical Research - Space Physics.
+This repository contains the implementation of the method used for the study of the Magnetosphere-Ionosphere-Thermosphere coupling at Jupiter using data from NASA's Juno mission. This code is associated to the publication *Magnetosphere-Ionosphere-Thermosphere Coupling Study at Jupiter Based on Juno’s First 30 Orbits and Modeling Tools*, by Al Saati et al. (2022, Journal of Geophysical Research - Space Physics, https://doi.org/10.1029/2022JA030586).
 
 This work have been done during the master internship of Sariah Al Saati and Noé Clément at Institut de Recherche en Astrophysique et Planétologie (IRAP) in Toulouse, under the supervision of Michel Blanc and Nicolas André, in 2021.
 
@@ -8,6 +8,8 @@ The code has been partly adapted from the code of Yuxian Wang written in IDL wri
 
 ## Contact
 Sariah Al Saati - sariah.al-saati@polytechnique.edu
+
+**Cite the paper:** [![DOI](https://zenodo.org/badge/DOI/10.1029/2022JA030586.svg)](https://doi.org/10.1029/2022JA030586)
 
 **Cite the code:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7023402.svg)](https://doi.org/10.5281/zenodo.7023402)
 
